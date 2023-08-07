@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5k Mud Run</title>
+</head>
+<!-- This is an html only form for a fake mud run -->
+<!-- Author: Ben Gunderson -->
+<body>
+    <h1>5k Mud Run</h1>
+    <h2>Sign Up Form</h2>
+    <h3>Sign up now for early bird pricing and save 50%!</h3>
+        <form id="mudRun" action="">
+            <!-- Input for first and last name -->
+            <div>
+                <label for="name">First Name</label>
+                <input type="text" name="name" id="name" required />
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" required />
+            </div>
+            <!-- Radio buttons for event type -->
+            <div>
+                <label for="event">Select your event:</label><br>
+                <input type="radio" id="5k" name="event" value="5k" />
+                <label for="5k">5k</label>
+            </div>
+            <div>
+                <input type="radio" id="10k" name="event" value="10k" />
+                <label for="10k">10k</label>
+            </div>
+            <div>
+                <input type="radio" id="15k" name="event" value="15k" />
+                <label for="15k">15k</label>
+            </div>
+            <!-- Input for email -->
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <!-- Input for password -->
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" minlength="5" maxlength="50" required>
+            </div>
+            <!-- Dropdown for age -->
+            <div>
+                <label for="age-select">Select your age group:</label><br>
+                <select name="age" id="age-select">
+                    <option value="">--Please choose an age group--</option>
+                    <option value="Under 18">Under 18</option>
+                    <option value="19-30">19-30</option>
+                    <option value="30+">30+</option>
+                </select>
+            </div>
+            <!-- Submit Button -->
+            <div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+
+
+</body>
+
+</html>
